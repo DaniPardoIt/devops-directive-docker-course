@@ -16,6 +16,7 @@ build-multiarch:
 		--secret id=secret.txt,src=local-secret.txt \
 		-t sidpalas/multi-arch-test:latest \
 		-f Dockerfile.sample \
+		--builder container \
 		--push \
 		.
 
